@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="tabs">
+            <button class="tab" onclick="openTab('html')">HTML</button>
+            <button class="tab" onclick="openTab('css')">CSS</button>
+            <button class="tab" onclick="openTab('js')">JavaScript</button>
+        </div>
+        <textarea id="html" class="code-editor"></textarea>
+        <textarea id="css" class="code-editor"></textarea>
+        <textarea id="js" class="code-editor"></textarea>
+    </div>
+    <div class="output-container">
+        <iframe id="output"></iframe>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchbrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closebrackets.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
